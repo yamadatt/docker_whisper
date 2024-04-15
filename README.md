@@ -22,6 +22,12 @@ docker build . -t whisper_gpu
 docker run --rm --gpus all -it -d -v $(pwd):/workspace/ --name whisper_gpu whisper_gpu
 ```
 
+こちらでもOK。
+
+```
+docker run --rm --gpus all -it -d -v /media/radio/:/workspace/ --name whisper_gpu whisper_gpu
+```
+
 ## コンテナに入る
 
 whispreを動かしたいので、以下でコンテナに入ります。
